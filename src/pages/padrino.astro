@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="David y Rosa">
+
+<div class="flex justify-center items-center min-h-screen p-4">
+  <div class="max-w-sm w-full mx-4 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out animate-fadeIn">
+    <div class="px-4 sm:px-6 py-6 sm:py-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-yellow-500 mb-4 animate-slideDown">
+        PADRINO DE HONOR
+      </h2>
+
+      <h3 class="text-lg sm:text-xl font-semibold text-center text-green-300 mb-3 animate-slideRight">
+        Joel Martinez
+      </h3>
+
+      <p class="text-sm sm:text-base text-white text-center leading-relaxed animate-slideUp">
+      Este no es solo un título, ¡es un PASAPORTE a privilegios exclusivos! Como padrino de honor, Joel Martinez (Pasante) tiene derecho a:
+      <br> -Doble ración de comida (¡porque una no es suficiente!).
+      <br> -Todas las bebidas que desee (sin preguntas).
+      <br> -La primera fila para la foto.
+      <br> -Hacer chistes malos durante la fiesta (y que todos los invitados se rían por educación).
+      <br> -Licencia para bailar con quien sea.
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes slideRight {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-slideDown {
+    animation: slideDown 0.8s ease-out;
+  }
+
+  .animate-slideRight {
+    animation: slideRight 0.8s ease-out 0.3s backwards;
+  }
+
+  .animate-slideUp {
+    animation: slideUp 0.8s ease-out 0.6s backwards;
+  }
+</style>
+
+</Layout>

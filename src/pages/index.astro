@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import MainImage from '../components/MainImage.jsx';
+import WeddingCountdown from '../components/WeddingCountdown';
+---
+
+<Layout title="David y Rosa">
+
+    <br>
+    <br>
+
+    <main>
+    <MainImage client:load />
+    <!-- Resto de tu contenido -->
+    </main>
+    <WeddingCountdown client:load />
+
+</Layout>

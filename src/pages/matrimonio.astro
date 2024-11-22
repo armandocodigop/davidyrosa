@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import PadrinosGrid from '../components/PadrinosGrid';
+---
+
+<Layout title="David y Rosa">
+    <div class="container mx-auto p-4">
+        <div class="flex justify-center items-center">
+            <img src="2.jpg" alt="Imagen centrada" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+    </div>
+    <br>
+    <div class="text-center text-gray-300 px-4 text-xl">
+        <p>Les invitamos a celebrar Nuestro Enlace Matrimonial que se llevara acabo el dia sabado 23 de noviembre a hrs 14:00pm. En la iglesia "Juan Bautista" de Challapata</p>
+        <br>
+        <p>Pasada la ceremonia Religiosa les invitamos a la recepcion social en la localidad de Pazña en el teatro Municipal</p>
+        <br>
+        <p>CON LA BENDICION DE NUESTROS PADRES</p>
+    </div>
+    <br>
+    <div class="grid grid-cols-2 gap-4 w-full">
+        <!-- Primera mitad -->
+        <div class="bg-transparent p-4 rounded-lg shadow text-center">
+            <h2 class="text-xl font-bold mb-3 text-yellow-500">PADRES DEL NOVIO</h2>
+            <ul class="list-none">
+                <li class="mb-2 text-blue-300">Casiano Quispia Daga</li>
+                <li class="mb-2 text-blue-100">Germina Valencia Yupanqui</li>
+            </ul>
+        </div>
+
+        <!-- Segunda mitad -->
+        <div class="bg-transparent p-4 rounded-lg shadow text-center">
+            <h2 class="text-xl font-bold mb-3 text-yellow-500">PADRES DE LA NOVIA</h2>
+            <ul class="list-none">
+                <li class="mb-2 text-blue-300">Estanislao Mamani Peñafiel</li>
+                <li class="mb-2 text-blue-100">Nicolasa Checa Espinoza</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+    <section class="py-12">
+        <PadrinosGrid client:load />
+    </section>
+    </div>
+
+</Layout>
